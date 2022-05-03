@@ -1,3 +1,10 @@
 [build-system]
 requires = ["setuptools>=42"]
 build-backend = "setuptools.build_meta"
+
+[distutils]
+index-servers = "pypi"
+
+[pypi]
+repository = "https://upload.pypi.org/simple/"
+username = "odd_odo"

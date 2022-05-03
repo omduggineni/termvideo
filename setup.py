@@ -1,7 +1,11 @@
 from setuptools import setup
 
 setup(
-    name='asciivideo',
+    name='termvideo',
     version='1.0',
-    scripts=['asciivideo.py'],
+    scripts=['termvideo.py'],
+    license="LGPLv3",
+    entry_points = {
+        'console_scripts': ['termvideo=termvideo:main'],
+    }
 )

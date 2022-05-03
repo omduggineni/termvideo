@@ -1,13 +1,9 @@
+#!/usr/bin/env python3
+
 import cv2
 import sys
 import shutil
 import numpy as np
-from time import sleep
-
-video_name = sys.argv[1]
-cap = cv2.VideoCapture(video_name)
-
-chars = " .,:;i1tfLCG08@"
 
 def display_frame(frame):
     #get terminal size
@@ -29,13 +25,14 @@ def display_frame(frame):
             #print to terminal
             sys.stdout.write(" ")
 
-# image = cv2.imread("ppmSample.ppm")
-# display_frame(image)
-while(cap.isOpened()):
-    ret, frame = cap.read()
-    if ret == True:
-        display_frame(frame)
-    else:
-        break
-
-# sys.stdout.write("\x1b[48;2;{};{};{}m".format(0, 0, 0))
+def main():
+    video_name = sys.argv[1]
+    cap = cv2.VideoCapture(video_name)
+    # image = cv2.imread("ppmSample.ppm")
+    # display_frame(image)
+    while(cap.isOpened()):
+        ret, frame = cap.read()
+        if ret == True:
+            display_frame(frame)
+        else:
+            break
