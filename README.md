@@ -4,6 +4,8 @@ TermVideo is a Python program which uses **escape sequences** to display video f
 
 Install with `pip install termvideo`.
 
+![how termvideo works](https://raw.githubusercontent.com/omduggineni/termvideo/main/demos/termvideo_test.gif "ok fine, sorry for the rickroll")
+
 Requirements:
 - Python 3
 - OpenCV for Python
