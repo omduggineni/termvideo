@@ -9,4 +9,4 @@ Install with `pip install termvideo`.
 Requirements:
 - Python 3
 - OpenCV for Python
-- Any terminal emulator with Truecolor support
+- Any terminal emulator with Truecolor support (or use termvideo -b ascii for ascii art mode)
